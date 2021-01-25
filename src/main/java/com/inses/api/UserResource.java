@@ -22,7 +22,7 @@ public class UserResource {
         return userService.createUser(user);
     }
 
-    
+
     //  get all users
     @GetMapping("/get")
     private List<User> getAllPost() throws ExecutionException, InterruptedException {
