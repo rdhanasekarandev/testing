@@ -17,6 +17,7 @@ public class UserResource {
 
 
     //  create new User
+    
     @PostMapping("/save")
     public String saveUserDetails(@RequestBody User user){
         return userService.createUser(user);
