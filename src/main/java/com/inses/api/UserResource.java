@@ -15,12 +15,8 @@ public class UserResource {
     private UserService userService;
 
     //  create new User
-    @GetMapping("/save")
-    public String saveUserDetails(){
-        User user = new User();
-        user.setName("test");
-        user.setEmailId("test@gmail.com");
-        user.setPhoneNumber("8056384773");
+    @PostMapping("/save")
+    public String saveUserDetails(@RequestBody User user){
         return userService.createUser(user);
     }
 
