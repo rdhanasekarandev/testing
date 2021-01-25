@@ -21,6 +21,7 @@ public class UserResource {
     }
 
     //  get all users
+    @CrossOrigin
     @GetMapping("/get")
     private List<User> getAllPost() throws ExecutionException, InterruptedException {
         return userService.getAllUser();
