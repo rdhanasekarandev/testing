@@ -15,7 +15,7 @@ public class UserResource {
     private UserService userService;
 
     //  create new User
-    @PostMapping("/get")
+    @GetMapping("/save")
     public String saveUserDetails(){
         User user = new User();
         user.setName("test");
